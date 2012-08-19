@@ -1,0 +1,93 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  background: url(images/background_cinza.png) repeat center top;
+}
+
+#header {
+  margin: 0px;
+  position: fixed;
+  width: 100%;
+  min-width: 940px;
+  top: 0px;
+  height: 110px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
+  z-index: 999;
+}
+
+#header .wrapper {
+  width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#content {
+	padding-top: 140px;
+  height: 600px;
+}
+
+#content .message {
+  width: 950px;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+#content h1 {
+	color: #003862;
+	font-family: "museo-sans";
+	font-size: 60px;
+	text-align: center;
+}
+
+#content h2 {
+	color: #6b6b6b;
+	font-family: "museo-sans";
+	font-size: 30px;
+	text-align: center;
+}
+
+.banner_border {
+	margin: auto;
+	margin-top: 20px;
+	width: 860px;
+	padding: 5px 5px 5px 5px;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+	background-color: white;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+
+}
+
+.banner_content {
+	padding: 0px;
+	position: relative;
+	border: 1px solid #0E1E29;
+	box-shadow: 0 0 2px 1px #0D3553 inset;
+}
+
+.banner_bottom {
+	height: 13px;
+	width: 930px;
+	background: url(//cdn.mxpnl.com/cache/6e4cf57e79cb183fde8a2cd4cf0bcbbf/images/static/pages_stack_repeat.png) repeat-x;
+}
