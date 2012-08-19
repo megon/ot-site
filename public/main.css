@@ -67,6 +67,11 @@ html {
 	text-align: center;
 }
 
+#content h1 em {
+	font-weight: 700;
+	font-style: italic;
+}
+
 .banner_border {
 	margin: auto;
 	margin-top: 20px;
