@@ -18,19 +18,15 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 html {
-  background: url(images/background_cinza.png) repeat center top;
+  background-color: #F9F9F9;
 }
 
 #header {
+	background: url(images/background_cinza_claro.png) repeat center top;
   margin: 0px;
-  position: fixed;
   width: 100%;
   min-width: 940px;
-  top: 0px;
   height: 110px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 6px 0;
   z-index: 999;
 }
@@ -42,28 +38,32 @@ html {
 }
 
 #content {
-	padding-top: 140px;
-  height: 600px;
+	padding-top: 20px;
+  height: 1200px;
 }
 
-#content .message {
-  width: 950px;
-  margin: auto;
-  overflow: hidden;
+#separador {
+	padding-top: 20px;
+	bottom: 0;
+	left: 0;
+	width: 900px;
+	height: 28px;
+	display: inline-block;
+	background: transparent url(images/separador.png) no-repeat center;
 }
 
-
-#content h1 {
-	color: #003862;
+h1 {
+	color: #3A89C9;
 	font-family: "museo-sans";
-	font-size: 60px;
+	font-size: 36px;
 	text-align: center;
 }
+
 
 #content h2 {
 	color: #6b6b6b;
 	font-family: "museo-sans";
-	font-size: 30px;
+	font-size: 20px;
 	text-align: center;
 }
 
@@ -72,10 +72,10 @@ html {
 	font-style: italic;
 }
 
-.banner_border {
+.border_main_banner {
 	margin: auto;
 	margin-top: 20px;
-	width: 860px;
+	width: 900px;
 	padding: 5px 5px 5px 5px;
 	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 	background-color: white;
@@ -84,15 +84,93 @@ html {
 
 }
 
-.banner_content {
+.main_banner {
+	margin: 10px 10px;
 	padding: 0px;
 	position: relative;
-	border: 1px solid #0E1E29;
-	box-shadow: 0 0 2px 1px #0D3553 inset;
+	overflow:hidden;
+	font-family: "museo-sans";
+	color: #6b6b6b;
+	font-size: 16px;
+	font-weight: 300;
+	height: 300px;
 }
 
-.banner_bottom {
-	height: 13px;
-	width: 930px;
-	background: url(//cdn.mxpnl.com/cache/6e4cf57e79cb183fde8a2cd4cf0bcbbf/images/static/pages_stack_repeat.png) repeat-x;
+.main_banner h1 {
+	color: #F26C4F;
+	font-family: "museo-sans";
+	font-size: 26px;
+	text-align: left;
 }
+
+.left {
+	float: left;	
+	width: 450px;
+}
+
+.secondary_banner_white {
+	margin: 10px 10px;
+	padding: 0px;
+	position: relative;
+	font-family: "museo-sans";
+	color: #6b6b6b;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.secondary_banner_blue {
+	margin: 10px 10px;
+	padding: 0px;
+	position: relative;
+	font-family: "museo-sans";
+	color: #6b6b6b;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.border_secondary_banner_blue {
+	margin: auto;
+	margin-top: 20px;
+	width: 900px;
+	padding: 5px 5px 5px 5px;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+	background-color: #E9F2F9;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+}
+
+.border_secondary_banner_white {
+	margin: auto;
+	margin-top: 20px;
+	width: 900px;
+	padding: 5px 5px 5px 5px;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+	background-color: white;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+}
+
+.secondary_banner_blue h1 {
+	color: #3A89C9;
+	font-family: "museo-sans";
+	font-size: 24px;
+	text-align: left;
+}
+
+.secondary_banner_white h1 {
+	color: #F26C4F;
+	font-family: "museo-sans";
+	font-size: 24px;
+	text-align: left;
+}
+
+.secondary_banner_white h1 em {
+	font-weight: 700;
+	font-style: italic;
+}
+
+.secondary_banner_blue h1 em {
+	font-weight: 700;
+	font-style: italic;
+}
+
