@@ -32,7 +32,7 @@ p {
 }
 
 body {
-  background: url(images/gradient_squares.png);
+  background: url(gradient_squares.png);
   /*background-color: #EEEBEB; #F9F9F9;*/
   padding-bottom: 20px;
 }
@@ -49,7 +49,7 @@ body {
 
 #header {
   /*background: url(images/background_cinza_claro.png) repeat center top; */
-  background: url(images/subtlenet2.png);
+  background: url(subtlenet2.png);
   margin: 0px;
   width: 100%;
   height: 110px;
@@ -83,7 +83,7 @@ em {
 	width: 900px;
 	height: 28px;
 	display: inline-block;
-	background: transparent url(images/separador.png) no-repeat center;
+	background: transparent url(separador.png) no-repeat center;
 }
 
 h1 {
@@ -176,20 +176,20 @@ h2 {
 
 .prev {
   left: -60px;
-  background: url('images/arrows.png') 0 -105px no-repeat;
+  background: url('arrows.png') 0 -105px no-repeat;
 }
 
 .prev:hover {
-  background: url('images/arrows.png') 0 -158px no-repeat;
+  background: url('arrows.png') 0 -158px no-repeat;
 }
 
 .next {
-  background: url('images/arrows.png') 0 -0px no-repeat;
+  background: url('arrows.png') 0 -0px no-repeat;
   right: -60px;
 }
 
 .next:hover {
-  background: url('images/arrows.png') 0 -52px no-repeat;
+  background: url('arrows.png') 0 -52px no-repeat;
 }
 
 
