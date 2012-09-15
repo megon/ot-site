@@ -2,63 +2,102 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-    <script type="text/javascript" src="//use.typekit.net/epm2wco.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+   	  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	  <script type="text/javascript" src="/js/jcarousellite_1.0.1.min.js"></script>
 	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	  <title>OneTarget</title>
 
 	  <link href="main.css" media="screen" rel="stylesheet" type="text/css">
   </head>
 <body>
+	  <div id="header">
+		<div class="logo">
+		  <img src="/assets/images/logo.png" alt="OneTarget - App de Behavioral Targeting">
+		</div>
+	  </div>
+  <div id="wrapper">
+	  <div id="content">
 
-  <div id="header">
-    <div class="wrapper">
-      <img src="/images/logo.png" alt="Megon" style="float: left; margin-top: 6px;" original="/images/logo.png">
-    </div>
+		<h1>Conheça o <em>visitante</em> do seu site.</h1>
+		<h2>E exiba conteúdo relevante para ele. Tudo em tempo real.</h2>
+		
+		<div id="slider_content">
+		  <a class="prev" href="#">Anterior</a>
+		  <a class="next" href="#">Próximo</a>
+		  <div id="main_banner">
+			<div>
+				<ul>
+				  <li>
+					<div class="left">
+					  <img src="/assets/images/target.png" width="400px">
+					</div>
+					<div class="right">
+					  <h1>O que é OneTarget</h1><br>
+					  App de <em>Behavioral Targeting</em> para exibição de conteúdo personalizado
+					  para o visitante do seu site.
+					</div>
+				  </li>
+				  <li>
+					<div>
+						<h1>Behavioral Targeting</h1>
+						Permite a exibição de conteúdo relevante para o seu visitante, através da análise de sua visitação.<br><br>
+						<h1>Quem ganha com isso?</h1>
+						<div class="columns">
+						  <div class="cel-a">
+							<h2>Seu site</h2>
+							<p>Maior volume de vendas, pois as ofertas serão mais relevantes para o visitante, ou seja, mostra o que o visitante quer comprar.</p>
+						  </div>
+						  <div class="cel-b">
+							<h2>Sua publicidade</h2>
+							Aumenta a taxa de retorno da campanha, pois permite direcioná-la para um público-alvo mais focado.
+						  </div>
+						  <div class="cel-c">
+							<h2>Seu visitante</h2>
+							Torna a experiência de navegação mais rica, pois mostra o que o visitante quer ver.
+						  </div>
+						</div>
+					</div>
+				  </li>
+				  <li>
+					<div>
+					  <h1>Como funciona?</h1>
+					  <br/>
+					  <img src="/images/comofunciona.png" width="940px">
+					</div>
+				  </li>
+
+				</ul>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+		<div id="footer">
+			<h1>Precisamos de sua ajuda</h1><br>
+			<p>Ajude-nos a desenvolver a melhor app de <em>Behavioral targeting</em> do mercado.<br><br>
+			Se você está procurando uma app de Behavioral Targeting para seu site e está estudando alternativas, ótimo!<br>
+			Também estamos procurando parceiros para ajudar a desenvolver nossa ferramenta.</p><br>
+
+			<p>Deixe seu email abaixo que logo entraremos em contato para juntos atingirmos nossos objetivos.</p>
+
+			<form method="post" action="">
+				<input type="text" name="email" value="seu@email.com">
+				<input type="submit" value="Enviar" class="submit">
+			</form>
+		</div>
+  
   </div>
-  <div id="content">
 
-    <h1>Conheça o <em>visitante</em> do seu site.</h1>
-    <h2>E exiba conteúdo relevante para ele. Tudo em tempo real.</h2>
+  
+</body>
+<script>
+$("#main_banner").jCarouselLite({
+    btnNext: ".next",
+    btnPrev: ".prev",
+    scroll: 1,
+    visible: 1
+});
+</script>
 
-    <div class="border_main_banner">
-      <div class="main_banner">
-        <div class="left">
-          <img src="images/identificacao.png" width="430px" height="300px">
-        </div>
-        <div class="right">
-          <h1>Behavior target</h1><br>
-          Saiba quem são, onde estão e o que desejam os visitantes do seu site.
-        </div>
-      </div>
-    </div>
-
-    <div class="border_secondary_banner_blue">
-      <div class="secondary_banner_blue">
-        <h1>O que é o <em>OneTarget</em>?</h1><br>
-        Plataforma que permite a personalização de portais, através da análise do histórico de visita de cada visitante do seu site.
-        Sendo possível personalizar tanto o conteúdo quanto a publicidade do seu site para seu visitante de acordo com seus interesses. Tudo isso em tempo real.
-      </div>
-    </div>
-    
-    <div class="border_secondary_banner_white">
-      <div class="secondary_banner_white">
-        <h1>Como funciona?</h1><br>
-        Rastreamos os movimentos do visitante no site;<br>
-        Criamos regras de navegação que serão a base para a personalização do conteúdo do site;<br>
-        Na próxima vez que o visitante entrar, executamos a regra e mostramos conteúdo personalizado.
-      </div>
-    </div>
-    
-    <div class="border_secondary_banner_blue">
-      <div class="secondary_banner_blue">
-        <h1>Exemplo</h1><br>
-        Portal de assinaturas de revistas: www.assinemais.com.br<br>
-        Regra: Mostrar banner com 3 revistas de acordo com o histórico de navegação do meu visitante.<br><br>
-        Cenário: tenho um visitante que visitou 5 vezes a revista Claudia, outras 3 vezes a revista Isto É, mais 10 vezes na revista Caras e 1 vez na revista Quatro Rodas. Quero exibir para ele na próxima vez que ele visitar meu portal um banner com as revistas Caras, Claudia e Isto É nessa ordem.      
-        </div>
-    </div>
-
-  </div>
-
-</body></html>
+</html>
