@@ -9,6 +9,11 @@ group :test, :development do
   gem 'sqlite3'
 end
 
+group :production do
+  gem 'pg', '~> 0.11'
+#  gem 'thin'
+end
+
 
 
 # Gems used only for assets and not required
