@@ -1,7 +1,9 @@
 Site::Application.routes.draw do
   root :to => "home#index"
   get "home/index"
-
+  
+  match 'home/participar' => 'home#participar', :via => :post
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,8 +1,9 @@
 class Interessado < ActiveRecord::Base
-  after_save :enviar_email_interessado
-  validates :email, :presence => true, :uniqueness => true
+  attr_accessible :email
+  after_save :enviar_email
+  validates :email, :presence => true, :uniqueness => true, :email => true
   
-  def enviar_email_interessado
-    Notificacao.enviar(self).deliver
+  def enviar_email
+    Mailer.enviar(self.email).deliver
   end
 end

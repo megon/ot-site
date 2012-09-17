@@ -81,10 +81,15 @@
 
 			<p>Deixe seu email abaixo que logo entraremos em contato para juntos atingirmos nossos objetivos.</p>
 
-			<form method="post" action="">
-				<input type="text" name="email" value="seu@email.com">
-				<input type="submit" value="Enviar" class="submit">
-			</form>
+      <div id="form">
+  		  <%= form_for :interessado, :remote => true, :url => {:action => 'participar'} do |f| %>
+		  
+  		    <%= f.email_field :email, size: 30, :placeholder => "Digite aqui seu email." %>
+  		    <%= f.submit "Enviar", :id => 'enviar', :class => 'fancy_button', :disable_with => "Aguarde..."%><br>
+  		    <div id="message">
+  		    </div>
+  		  <%end%>
+      </div>
 		</div>
   
   </div>
@@ -92,6 +97,10 @@
   
 </body>
 <script>
+$("#enviar").click(function(){
+  $("#message").html('');
+});
+
 $("#main_banner").jCarouselLite({
     btnNext: ".next",
     btnPrev: ".prev",

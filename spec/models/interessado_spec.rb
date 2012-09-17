@@ -1,5 +1,10 @@
 require 'spec_helper'
 
 describe Interessado do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "novo" do
+    it "deve enviar email" do
+      interessado = Interessado.create(email: "email@email.com")
+    end
+
+  end
 end

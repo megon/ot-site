@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.6'
 
+gem 'email_validator'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -11,7 +13,6 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'rspec-nc'
   gem 'autotest'
-
 end
 
 group :production do
