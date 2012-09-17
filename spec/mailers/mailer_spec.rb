@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe Mailer do
-  describe "enviar" do
+  describe "enviar email de novo cadastro para responsaveis" do
     let(:mail) { Mailer.enviar "email@email.com" }
 
     it "verificar cabecalhos" do
