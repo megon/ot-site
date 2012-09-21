@@ -1,5 +1,8 @@
 class HomeController < ApplicationController
   respond_to :js
+  
+  caches_page :index
+  
   def index
   end
   
